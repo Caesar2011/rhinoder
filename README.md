@@ -10,3 +10,7 @@ the following code runs `deno --allow-net example.ts` which is located in `/some
 ```bash
 /some/work/dir$ deno --allow-run --allow-read https://raw.githubusercontent.com/Caesar2011/rhinoder/master/mod.ts --allow-net example.ts
 ```
+
+## Thanks to
+
+Thanks to [samuelgozi](https://github.com/samuelgozi) who posted the base for this code in [this GitHub issue](https://github.com/denoland/deno/issues/4830).
