@@ -4,7 +4,7 @@ This program reloads a deno program automatically when a file in the current wor
 
 ## Usage
 
-the following code runs `deno --allow-net example.ts` which is located in `/some/work/dir/example.ts` on start an whenever a file in the folder `/some/work/dir` changes.
+the following code runs `deno --allow-net example.ts` which is located in `/some/work/dir/example.ts` on start and whenever a file in the folder `/some/work/dir` changes.
 
 
 ```bash
