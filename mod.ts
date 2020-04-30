@@ -15,7 +15,7 @@ function runApp() {
 
 runApp();
 
-for await (const event of Deno.fsEvents('.')) {
+for await (const event of Deno.watchFs('.')) {
   if (event.kind !== "access") {
     if (timeout) clearTimeout(timeout);
     timeout = setTimeout(runApp, throttle);
