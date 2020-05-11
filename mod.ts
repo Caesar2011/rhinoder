@@ -4,11 +4,9 @@ function startProcess(args: string[] = []): Deno.Process {
 
 const throttle = 500;
 let app: Deno.Process = startProcess(Deno.args);
-let appInitTime: number = Date.now();
 let timeout: number|null = null;
 
 function runApp() {
-	appInitTime = Date.now();
   app && app.close();
   app = startProcess(Deno.args);
 }
