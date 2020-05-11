@@ -8,12 +8,10 @@ let appInitTime: number = Date.now();
 let timeout: number|null = null;
 
 function runApp() {
-	appInitTime = Date.now();
-  app && app.close();
+  appInitTime = Date.now();
+  app.close();
   app = startProcess(Deno.args);
 }
-
-runApp();
 
 for await (const event of Deno.watchFs('.')) {
   if (event.kind !== "access") {
