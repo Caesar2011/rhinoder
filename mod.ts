@@ -11,8 +11,6 @@ function runApp() {
   app = startProcess(Deno.args);
 }
 
-runApp();
-
 for await (const event of Deno.watchFs('.')) {
   if (event.kind !== "access") {
     if (timeout) clearTimeout(timeout);
