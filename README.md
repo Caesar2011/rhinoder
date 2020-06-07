@@ -8,7 +8,7 @@ the following code runs `deno --allow-net example.ts` which is located in `/some
 
 
 ```bash
-/some/work/dir$ deno --allow-run --allow-read https://raw.githubusercontent.com/Caesar2011/rhinoder/master/mod.ts --allow-net example.ts
+/some/work/dir$ deno --allow-run --allow-read https://deno.land/x/rhinoder@v1.2.0/mod.ts --allow-net example.ts
 ```
 
 ## Thanks to
