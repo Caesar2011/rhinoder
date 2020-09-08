@@ -1,5 +1,5 @@
 function startProcess(args: string[] = []): Deno.Process {
-  return Deno.run({ cmd: ['deno', ...args] });
+  return Deno.run({ cmd: ['deno', 'run', ...args] });
 }
 
 const throttle = 500;
